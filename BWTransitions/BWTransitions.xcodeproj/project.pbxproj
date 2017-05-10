@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B44A68B31EC05D740037F1EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A68B21EC05D740037F1EA /* main.m */; };
+		B44A68B61EC05D740037F1EA /* BWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A68B51EC05D740037F1EA /* BWAppDelegate.m */; };
+		B44A68BE1EC05D740037F1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44A68BD1EC05D740037F1EA /* Assets.xcassets */; };
+		B44A68C11EC05D740037F1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44A68BF1EC05D740037F1EA /* LaunchScreen.storyboard */; };
+		B44A68CC1EC05D740037F1EA /* BWTransitionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A68CB1EC05D740037F1EA /* BWTransitionsTests.m */; };
+		B44A68D71EC05D740037F1EA /* BWTransitionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A68D61EC05D740037F1EA /* BWTransitionsUITests.m */; };
+		B44A68E71EC05E030037F1EA /* BWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A68E51EC05E030037F1EA /* BWMainViewController.m */; };
+		B44A68E81EC05E030037F1EA /* BWMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44A68E61EC05E030037F1EA /* BWMainViewController.xib */; };
+		B495BC8F1EC1C54600D32582 /* BWModalSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B495BC8B1EC1C54600D32582 /* BWModalSecondViewController.m */; };
+		B495BC901EC1C54600D32582 /* BWModalSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B495BC8C1EC1C54600D32582 /* BWModalSecondViewController.xib */; };
+		B495BC991EC1C58400D32582 /* BWModalAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B495BC921EC1C58400D32582 /* BWModalAnimatedTransition.m */; };
+		B495BC9A1EC1C58400D32582 /* BWModalInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B495BC941EC1C58400D32582 /* BWModalInteractiveTransition.m */; };
+		B495BC9B1EC1C58400D32582 /* BWModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B495BC961EC1C58400D32582 /* BWModalTransitionDelegate.m */; };
+		B495BC9C1EC1C58400D32582 /* BWModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B495BC981EC1C58400D32582 /* BWModalViewController.m */; };
+		B495BCA01EC1C9FD00D32582 /* BWModalFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B495BC9E1EC1C9FD00D32582 /* BWModalFirstViewController.m */; };
+		B495BCA11EC1C9FD00D32582 /* BWModalFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B495BC9F1EC1C9FD00D32582 /* BWModalFirstViewController.xib */; };
+		B49ABC6F1EC29D9600C9C046 /* BWTabBarTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC6B1EC29D9600C9C046 /* BWTabBarTransitionDelegate.m */; };
+		B49ABC701EC29D9600C9C046 /* BWTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC6D1EC29D9600C9C046 /* BWTabBarViewController.m */; };
+		B49ABC711EC29D9600C9C046 /* BWTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49ABC6E1EC29D9600C9C046 /* BWTabBarViewController.xib */; };
+		B49ABC741EC29EBE00C9C046 /* BWTabBarAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC731EC29EBE00C9C046 /* BWTabBarAnimatedTransition.m */; };
+		B49ABC771EC29F2F00C9C046 /* BWTabBarInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC761EC29F2F00C9C046 /* BWTabBarInteractiveTransition.m */; };
+		B49ABC7B1EC2A15F00C9C046 /* BWTab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC791EC2A15F00C9C046 /* BWTab1ViewController.m */; };
+		B49ABC7C1EC2A15F00C9C046 /* BWTab1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49ABC7A1EC2A15F00C9C046 /* BWTab1ViewController.xib */; };
+		B49ABC801EC2A17300C9C046 /* BWTab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC7E1EC2A17300C9C046 /* BWTab2ViewController.m */; };
+		B49ABC811EC2A17300C9C046 /* BWTab2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49ABC7F1EC2A17300C9C046 /* BWTab2ViewController.xib */; };
+		B49ABC841EC2BE6900C9C046 /* BWPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC831EC2BE6900C9C046 /* BWPopViewController.m */; };
+		B49ABC881EC2BE9F00C9C046 /* BWPopFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC861EC2BE9F00C9C046 /* BWPopFirstViewController.m */; };
+		B49ABC891EC2BE9F00C9C046 /* BWPopFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49ABC871EC2BE9F00C9C046 /* BWPopFirstViewController.xib */; };
+		B49ABC8D1EC2BEB500C9C046 /* BWPopSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC8B1EC2BEB500C9C046 /* BWPopSecondViewController.m */; };
+		B49ABC8E1EC2BEB500C9C046 /* BWPopSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49ABC8C1EC2BEB500C9C046 /* BWPopSecondViewController.xib */; };
+		B49ABC911EC2BFA800C9C046 /* BWPopTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC901EC2BFA800C9C046 /* BWPopTransitionDelegate.m */; };
+		B49ABC941EC2C1D500C9C046 /* BWPopAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC931EC2C1D500C9C046 /* BWPopAnimatedTransition.m */; };
+		B49ABC9A1EC2C22400C9C046 /* BWPopInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B49ABC991EC2C22400C9C046 /* BWPopInteractiveTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B44A68C81EC05D740037F1EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44A68A61EC05D740037F1EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44A68AD1EC05D740037F1EA;
+			remoteInfo = BWTransitions;
+		};
+		B44A68D31EC05D740037F1EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44A68A61EC05D740037F1EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44A68AD1EC05D740037F1EA;
+			remoteInfo = BWTransitions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B44A68AE1EC05D740037F1EA /* BWTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44A68B21EC05D740037F1EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B44A68B41EC05D740037F1EA /* BWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWAppDelegate.h; sourceTree = "<group>"; };
+		B44A68B51EC05D740037F1EA /* BWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWAppDelegate.m; sourceTree = "<group>"; };
+		B44A68BD1EC05D740037F1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44A68C01EC05D740037F1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44A68C21EC05D740037F1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44A68C71EC05D740037F1EA /* BWTransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWTransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44A68CB1EC05D740037F1EA /* BWTransitionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWTransitionsTests.m; sourceTree = "<group>"; };
+		B44A68CD1EC05D740037F1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44A68D21EC05D740037F1EA /* BWTransitionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWTransitionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44A68D61EC05D740037F1EA /* BWTransitionsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWTransitionsUITests.m; sourceTree = "<group>"; };
+		B44A68D81EC05D740037F1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44A68E41EC05E030037F1EA /* BWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWMainViewController.h; sourceTree = "<group>"; };
+		B44A68E51EC05E030037F1EA /* BWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWMainViewController.m; sourceTree = "<group>"; };
+		B44A68E61EC05E030037F1EA /* BWMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWMainViewController.xib; sourceTree = "<group>"; };
+		B495BC8A1EC1C54600D32582 /* BWModalSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWModalSecondViewController.h; sourceTree = "<group>"; };
+		B495BC8B1EC1C54600D32582 /* BWModalSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWModalSecondViewController.m; sourceTree = "<group>"; };
+		B495BC8C1EC1C54600D32582 /* BWModalSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWModalSecondViewController.xib; sourceTree = "<group>"; };
+		B495BC911EC1C58400D32582 /* BWModalAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWModalAnimatedTransition.h; sourceTree = "<group>"; };
+		B495BC921EC1C58400D32582 /* BWModalAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWModalAnimatedTransition.m; sourceTree = "<group>"; };
+		B495BC931EC1C58400D32582 /* BWModalInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWModalInteractiveTransition.h; sourceTree = "<group>"; };
+		B495BC941EC1C58400D32582 /* BWModalInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWModalInteractiveTransition.m; sourceTree = "<group>"; };
+		B495BC951EC1C58400D32582 /* BWModalTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWModalTransitionDelegate.h; sourceTree = "<group>"; };
+		B495BC961EC1C58400D32582 /* BWModalTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWModalTransitionDelegate.m; sourceTree = "<group>"; };
+		B495BC971EC1C58400D32582 /* BWModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWModalViewController.h; sourceTree = "<group>"; };
+		B495BC981EC1C58400D32582 /* BWModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWModalViewController.m; sourceTree = "<group>"; };
+		B495BC9D1EC1C9FD00D32582 /* BWModalFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWModalFirstViewController.h; sourceTree = "<group>"; };
+		B495BC9E1EC1C9FD00D32582 /* BWModalFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWModalFirstViewController.m; sourceTree = "<group>"; };
+		B495BC9F1EC1C9FD00D32582 /* BWModalFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWModalFirstViewController.xib; sourceTree = "<group>"; };
+		B49ABC6A1EC29D9600C9C046 /* BWTabBarTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTabBarTransitionDelegate.h; sourceTree = "<group>"; };
+		B49ABC6B1EC29D9600C9C046 /* BWTabBarTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTabBarTransitionDelegate.m; sourceTree = "<group>"; };
+		B49ABC6C1EC29D9600C9C046 /* BWTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTabBarViewController.h; sourceTree = "<group>"; };
+		B49ABC6D1EC29D9600C9C046 /* BWTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTabBarViewController.m; sourceTree = "<group>"; };
+		B49ABC6E1EC29D9600C9C046 /* BWTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWTabBarViewController.xib; sourceTree = "<group>"; };
+		B49ABC721EC29EBE00C9C046 /* BWTabBarAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTabBarAnimatedTransition.h; sourceTree = "<group>"; };
+		B49ABC731EC29EBE00C9C046 /* BWTabBarAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTabBarAnimatedTransition.m; sourceTree = "<group>"; };
+		B49ABC751EC29F2F00C9C046 /* BWTabBarInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTabBarInteractiveTransition.h; sourceTree = "<group>"; };
+		B49ABC761EC29F2F00C9C046 /* BWTabBarInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTabBarInteractiveTransition.m; sourceTree = "<group>"; };
+		B49ABC781EC2A15F00C9C046 /* BWTab1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTab1ViewController.h; sourceTree = "<group>"; };
+		B49ABC791EC2A15F00C9C046 /* BWTab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTab1ViewController.m; sourceTree = "<group>"; };
+		B49ABC7A1EC2A15F00C9C046 /* BWTab1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWTab1ViewController.xib; sourceTree = "<group>"; };
+		B49ABC7D1EC2A17300C9C046 /* BWTab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTab2ViewController.h; sourceTree = "<group>"; };
+		B49ABC7E1EC2A17300C9C046 /* BWTab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTab2ViewController.m; sourceTree = "<group>"; };
+		B49ABC7F1EC2A17300C9C046 /* BWTab2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWTab2ViewController.xib; sourceTree = "<group>"; };
+		B49ABC821EC2BE6900C9C046 /* BWPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWPopViewController.h; sourceTree = "<group>"; };
+		B49ABC831EC2BE6900C9C046 /* BWPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWPopViewController.m; sourceTree = "<group>"; };
+		B49ABC851EC2BE9F00C9C046 /* BWPopFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWPopFirstViewController.h; sourceTree = "<group>"; };
+		B49ABC861EC2BE9F00C9C046 /* BWPopFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWPopFirstViewController.m; sourceTree = "<group>"; };
+		B49ABC871EC2BE9F00C9C046 /* BWPopFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWPopFirstViewController.xib; sourceTree = "<group>"; };
+		B49ABC8A1EC2BEB500C9C046 /* BWPopSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWPopSecondViewController.h; sourceTree = "<group>"; };
+		B49ABC8B1EC2BEB500C9C046 /* BWPopSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWPopSecondViewController.m; sourceTree = "<group>"; };
+		B49ABC8C1EC2BEB500C9C046 /* BWPopSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWPopSecondViewController.xib; sourceTree = "<group>"; };
+		B49ABC8F1EC2BFA800C9C046 /* BWPopTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWPopTransitionDelegate.h; sourceTree = "<group>"; };
+		B49ABC901EC2BFA800C9C046 /* BWPopTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWPopTransitionDelegate.m; sourceTree = "<group>"; };
+		B49ABC921EC2C1D500C9C046 /* BWPopAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWPopAnimatedTransition.h; sourceTree = "<group>"; };
+		B49ABC931EC2C1D500C9C046 /* BWPopAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWPopAnimatedTransition.m; sourceTree = "<group>"; };
+		B49ABC981EC2C22400C9C046 /* BWPopInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWPopInteractiveTransition.h; sourceTree = "<group>"; };
+		B49ABC991EC2C22400C9C046 /* BWPopInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWPopInteractiveTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44A68AB1EC05D740037F1EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44A68C41EC05D740037F1EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44A68CF1EC05D740037F1EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B44A68A51EC05D740037F1EA = {
+			isa = PBXGroup;
+			children = (
+				B44A68B01EC05D740037F1EA /* BWTransitions */,
+				B44A68CA1EC05D740037F1EA /* BWTransitionsTests */,
+				B44A68D51EC05D740037F1EA /* BWTransitionsUITests */,
+				B44A68AF1EC05D740037F1EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B44A68AF1EC05D740037F1EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44A68AE1EC05D740037F1EA /* BWTransitions.app */,
+				B44A68C71EC05D740037F1EA /* BWTransitionsTests.xctest */,
+				B44A68D21EC05D740037F1EA /* BWTransitionsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44A68B01EC05D740037F1EA /* BWTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				B44A68B41EC05D740037F1EA /* BWAppDelegate.h */,
+				B44A68B51EC05D740037F1EA /* BWAppDelegate.m */,
+				B44A68E41EC05E030037F1EA /* BWMainViewController.h */,
+				B44A68E51EC05E030037F1EA /* BWMainViewController.m */,
+				B44A68E61EC05E030037F1EA /* BWMainViewController.xib */,
+				B495BC861EC1C54600D32582 /* BWModal */,
+				B49ABC681EC29D9600C9C046 /* BWPop */,
+				B49ABC691EC29D9600C9C046 /* BWTabBar */,
+				B44A68B11EC05D740037F1EA /* Supporting Files */,
+			);
+			path = BWTransitions;
+			sourceTree = "<group>";
+		};
+		B44A68B11EC05D740037F1EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B44A68BD1EC05D740037F1EA /* Assets.xcassets */,
+				B44A68BF1EC05D740037F1EA /* LaunchScreen.storyboard */,
+				B44A68C21EC05D740037F1EA /* Info.plist */,
+				B44A68B21EC05D740037F1EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B44A68CA1EC05D740037F1EA /* BWTransitionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B44A68CB1EC05D740037F1EA /* BWTransitionsTests.m */,
+				B44A68CD1EC05D740037F1EA /* Info.plist */,
+			);
+			path = BWTransitionsTests;
+			sourceTree = "<group>";
+		};
+		B44A68D51EC05D740037F1EA /* BWTransitionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B44A68D61EC05D740037F1EA /* BWTransitionsUITests.m */,
+				B44A68D81EC05D740037F1EA /* Info.plist */,
+			);
+			path = BWTransitionsUITests;
+			sourceTree = "<group>";
+		};
+		B495BC861EC1C54600D32582 /* BWModal */ = {
+			isa = PBXGroup;
+			children = (
+				B495BC911EC1C58400D32582 /* BWModalAnimatedTransition.h */,
+				B495BC921EC1C58400D32582 /* BWModalAnimatedTransition.m */,
+				B495BC931EC1C58400D32582 /* BWModalInteractiveTransition.h */,
+				B495BC941EC1C58400D32582 /* BWModalInteractiveTransition.m */,
+				B495BC951EC1C58400D32582 /* BWModalTransitionDelegate.h */,
+				B495BC961EC1C58400D32582 /* BWModalTransitionDelegate.m */,
+				B495BC971EC1C58400D32582 /* BWModalViewController.h */,
+				B495BC981EC1C58400D32582 /* BWModalViewController.m */,
+				B495BC9D1EC1C9FD00D32582 /* BWModalFirstViewController.h */,
+				B495BC9E1EC1C9FD00D32582 /* BWModalFirstViewController.m */,
+				B495BC9F1EC1C9FD00D32582 /* BWModalFirstViewController.xib */,
+				B495BC8A1EC1C54600D32582 /* BWModalSecondViewController.h */,
+				B495BC8B1EC1C54600D32582 /* BWModalSecondViewController.m */,
+				B495BC8C1EC1C54600D32582 /* BWModalSecondViewController.xib */,
+			);
+			path = BWModal;
+			sourceTree = "<group>";
+		};
+		B49ABC681EC29D9600C9C046 /* BWPop */ = {
+			isa = PBXGroup;
+			children = (
+				B49ABC921EC2C1D500C9C046 /* BWPopAnimatedTransition.h */,
+				B49ABC931EC2C1D500C9C046 /* BWPopAnimatedTransition.m */,
+				B49ABC981EC2C22400C9C046 /* BWPopInteractiveTransition.h */,
+				B49ABC991EC2C22400C9C046 /* BWPopInteractiveTransition.m */,
+				B49ABC8F1EC2BFA800C9C046 /* BWPopTransitionDelegate.h */,
+				B49ABC901EC2BFA800C9C046 /* BWPopTransitionDelegate.m */,
+				B49ABC821EC2BE6900C9C046 /* BWPopViewController.h */,
+				B49ABC831EC2BE6900C9C046 /* BWPopViewController.m */,
+				B49ABC851EC2BE9F00C9C046 /* BWPopFirstViewController.h */,
+				B49ABC861EC2BE9F00C9C046 /* BWPopFirstViewController.m */,
+				B49ABC871EC2BE9F00C9C046 /* BWPopFirstViewController.xib */,
+				B49ABC8A1EC2BEB500C9C046 /* BWPopSecondViewController.h */,
+				B49ABC8B1EC2BEB500C9C046 /* BWPopSecondViewController.m */,
+				B49ABC8C1EC2BEB500C9C046 /* BWPopSecondViewController.xib */,
+			);
+			path = BWPop;
+			sourceTree = "<group>";
+		};
+		B49ABC691EC29D9600C9C046 /* BWTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B49ABC6A1EC29D9600C9C046 /* BWTabBarTransitionDelegate.h */,
+				B49ABC6B1EC29D9600C9C046 /* BWTabBarTransitionDelegate.m */,
+				B49ABC721EC29EBE00C9C046 /* BWTabBarAnimatedTransition.h */,
+				B49ABC731EC29EBE00C9C046 /* BWTabBarAnimatedTransition.m */,
+				B49ABC751EC29F2F00C9C046 /* BWTabBarInteractiveTransition.h */,
+				B49ABC761EC29F2F00C9C046 /* BWTabBarInteractiveTransition.m */,
+				B49ABC6C1EC29D9600C9C046 /* BWTabBarViewController.h */,
+				B49ABC6D1EC29D9600C9C046 /* BWTabBarViewController.m */,
+				B49ABC6E1EC29D9600C9C046 /* BWTabBarViewController.xib */,
+				B49ABC781EC2A15F00C9C046 /* BWTab1ViewController.h */,
+				B49ABC791EC2A15F00C9C046 /* BWTab1ViewController.m */,
+				B49ABC7A1EC2A15F00C9C046 /* BWTab1ViewController.xib */,
+				B49ABC7D1EC2A17300C9C046 /* BWTab2ViewController.h */,
+				B49ABC7E1EC2A17300C9C046 /* BWTab2ViewController.m */,
+				B49ABC7F1EC2A17300C9C046 /* BWTab2ViewController.xib */,
+			);
+			path = BWTabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44A68AD1EC05D740037F1EA /* BWTransitions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44A68DB1EC05D740037F1EA /* Build configuration list for PBXNativeTarget "BWTransitions" */;
+			buildPhases = (
+				B44A68AA1EC05D740037F1EA /* Sources */,
+				B44A68AB1EC05D740037F1EA /* Frameworks */,
+				B44A68AC1EC05D740037F1EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BWTransitions;
+			productName = BWTransitions;
+			productReference = B44A68AE1EC05D740037F1EA /* BWTransitions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B44A68C61EC05D740037F1EA /* BWTransitionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44A68DE1EC05D740037F1EA /* Build configuration list for PBXNativeTarget "BWTransitionsTests" */;
+			buildPhases = (
+				B44A68C31EC05D740037F1EA /* Sources */,
+				B44A68C41EC05D740037F1EA /* Frameworks */,
+				B44A68C51EC05D740037F1EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44A68C91EC05D740037F1EA /* PBXTargetDependency */,
+			);
+			name = BWTransitionsTests;
+			productName = BWTransitionsTests;
+			productReference = B44A68C71EC05D740037F1EA /* BWTransitionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B44A68D11EC05D740037F1EA /* BWTransitionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44A68E11EC05D740037F1EA /* Build configuration list for PBXNativeTarget "BWTransitionsUITests" */;
+			buildPhases = (
+				B44A68CE1EC05D740037F1EA /* Sources */,
+				B44A68CF1EC05D740037F1EA /* Frameworks */,
+				B44A68D01EC05D740037F1EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44A68D41EC05D740037F1EA /* PBXTargetDependency */,
+			);
+			name = BWTransitionsUITests;
+			productName = BWTransitionsUITests;
+			productReference = B44A68D21EC05D740037F1EA /* BWTransitionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B44A68A61EC05D740037F1EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = baiwhte;
+				TargetAttributes = {
+					B44A68AD1EC05D740037F1EA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 66A52TDMY9;
+						ProvisioningStyle = Automatic;
+					};
+					B44A68C61EC05D740037F1EA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 94V8YL7898;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B44A68AD1EC05D740037F1EA;
+					};
+					B44A68D11EC05D740037F1EA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 94V8YL7898;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B44A68AD1EC05D740037F1EA;
+					};
+				};
+			};
+			buildConfigurationList = B44A68A91EC05D740037F1EA /* Build configuration list for PBXProject "BWTransitions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B44A68A51EC05D740037F1EA;
+			productRefGroup = B44A68AF1EC05D740037F1EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44A68AD1EC05D740037F1EA /* BWTransitions */,
+				B44A68C61EC05D740037F1EA /* BWTransitionsTests */,
+				B44A68D11EC05D740037F1EA /* BWTransitionsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44A68AC1EC05D740037F1EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B495BC901EC1C54600D32582 /* BWModalSecondViewController.xib in Resources */,
+				B44A68C11EC05D740037F1EA /* LaunchScreen.storyboard in Resources */,
+				B49ABC811EC2A17300C9C046 /* BWTab2ViewController.xib in Resources */,
+				B49ABC7C1EC2A15F00C9C046 /* BWTab1ViewController.xib in Resources */,
+				B495BCA11EC1C9FD00D32582 /* BWModalFirstViewController.xib in Resources */,
+				B49ABC8E1EC2BEB500C9C046 /* BWPopSecondViewController.xib in Resources */,
+				B44A68BE1EC05D740037F1EA /* Assets.xcassets in Resources */,
+				B44A68E81EC05E030037F1EA /* BWMainViewController.xib in Resources */,
+				B49ABC891EC2BE9F00C9C046 /* BWPopFirstViewController.xib in Resources */,
+				B49ABC711EC29D9600C9C046 /* BWTabBarViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44A68C51EC05D740037F1EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44A68D01EC05D740037F1EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44A68AA1EC05D740037F1EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49ABC801EC2A17300C9C046 /* BWTab2ViewController.m in Sources */,
+				B49ABC9A1EC2C22400C9C046 /* BWPopInteractiveTransition.m in Sources */,
+				B49ABC6F1EC29D9600C9C046 /* BWTabBarTransitionDelegate.m in Sources */,
+				B49ABC701EC29D9600C9C046 /* BWTabBarViewController.m in Sources */,
+				B495BCA01EC1C9FD00D32582 /* BWModalFirstViewController.m in Sources */,
+				B44A68E71EC05E030037F1EA /* BWMainViewController.m in Sources */,
+				B495BC991EC1C58400D32582 /* BWModalAnimatedTransition.m in Sources */,
+				B495BC9A1EC1C58400D32582 /* BWModalInteractiveTransition.m in Sources */,
+				B49ABC881EC2BE9F00C9C046 /* BWPopFirstViewController.m in Sources */,
+				B49ABC841EC2BE6900C9C046 /* BWPopViewController.m in Sources */,
+				B49ABC741EC29EBE00C9C046 /* BWTabBarAnimatedTransition.m in Sources */,
+				B495BC9B1EC1C58400D32582 /* BWModalTransitionDelegate.m in Sources */,
+				B44A68B61EC05D740037F1EA /* BWAppDelegate.m in Sources */,
+				B495BC8F1EC1C54600D32582 /* BWModalSecondViewController.m in Sources */,
+				B44A68B31EC05D740037F1EA /* main.m in Sources */,
+				B49ABC911EC2BFA800C9C046 /* BWPopTransitionDelegate.m in Sources */,
+				B495BC9C1EC1C58400D32582 /* BWModalViewController.m in Sources */,
+				B49ABC771EC29F2F00C9C046 /* BWTabBarInteractiveTransition.m in Sources */,
+				B49ABC7B1EC2A15F00C9C046 /* BWTab1ViewController.m in Sources */,
+				B49ABC941EC2C1D500C9C046 /* BWPopAnimatedTransition.m in Sources */,
+				B49ABC8D1EC2BEB500C9C046 /* BWPopSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44A68C31EC05D740037F1EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44A68CC1EC05D740037F1EA /* BWTransitionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44A68CE1EC05D740037F1EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44A68D71EC05D740037F1EA /* BWTransitionsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44A68C91EC05D740037F1EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44A68AD1EC05D740037F1EA /* BWTransitions */;
+			targetProxy = B44A68C81EC05D740037F1EA /* PBXContainerItemProxy */;
+		};
+		B44A68D41EC05D740037F1EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44A68AD1EC05D740037F1EA /* BWTransitions */;
+			targetProxy = B44A68D31EC05D740037F1EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B44A68BF1EC05D740037F1EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44A68C01EC05D740037F1EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B44A68D91EC05D740037F1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B44A68DA1EC05D740037F1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B44A68DC1EC05D740037F1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66A52TDMY9;
+				INFOPLIST_FILE = BWTransitions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yingsheng.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B44A68DD1EC05D740037F1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66A52TDMY9;
+				INFOPLIST_FILE = BWTransitions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yingsheng.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B44A68DF1EC05D740037F1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 94V8YL7898;
+				INFOPLIST_FILE = BWTransitionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baiwhte.animation.BWTransitionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWTransitions.app/BWTransitions";
+			};
+			name = Debug;
+		};
+		B44A68E01EC05D740037F1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 94V8YL7898;
+				INFOPLIST_FILE = BWTransitionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baiwhte.animation.BWTransitionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWTransitions.app/BWTransitions";
+			};
+			name = Release;
+		};
+		B44A68E21EC05D740037F1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 94V8YL7898;
+				INFOPLIST_FILE = BWTransitionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baiwhte.animation.BWTransitionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BWTransitions;
+			};
+			name = Debug;
+		};
+		B44A68E31EC05D740037F1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 94V8YL7898;
+				INFOPLIST_FILE = BWTransitionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baiwhte.animation.BWTransitionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BWTransitions;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B44A68A91EC05D740037F1EA /* Build configuration list for PBXProject "BWTransitions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44A68D91EC05D740037F1EA /* Debug */,
+				B44A68DA1EC05D740037F1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44A68DB1EC05D740037F1EA /* Build configuration list for PBXNativeTarget "BWTransitions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44A68DC1EC05D740037F1EA /* Debug */,
+				B44A68DD1EC05D740037F1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44A68DE1EC05D740037F1EA /* Build configuration list for PBXNativeTarget "BWTransitionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44A68DF1EC05D740037F1EA /* Debug */,
+				B44A68E01EC05D740037F1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44A68E11EC05D740037F1EA /* Build configuration list for PBXNativeTarget "BWTransitionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44A68E21EC05D740037F1EA /* Debug */,
+				B44A68E31EC05D740037F1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B44A68A61EC05D740037F1EA /* Project object */;
+}
